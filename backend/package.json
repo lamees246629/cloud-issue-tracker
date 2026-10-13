@@ -1,0 +1,11 @@
+{
+  "name": "cloud-issue-tracker-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "REST API and JSON data service for Cloud Issue Tracker",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  }
+}

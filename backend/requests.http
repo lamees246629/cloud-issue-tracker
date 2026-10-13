@@ -1,0 +1,46 @@
+@baseUrl = http://localhost:8080
+@existingIssueId = ISS-101
+
+### View all issues
+GET {{baseUrl}}/api/issues
+Accept: application/json
+
+### Create an issue
+POST {{baseUrl}}/api/issues
+Content-Type: application/json
+Accept: application/json
+
+{
+  "title": "Projector not working in Lab 3",
+  "description": "Laptop cannot detect the classroom projector.",
+  "priority": "High"
+}
+
+### Change status
+PATCH {{baseUrl}}/api/issues/{{existingIssueId}}/status
+Content-Type: application/json
+Accept: application/json
+
+{
+  "status": "Resolved"
+}
+
+### Invalid title (expect 400)
+POST {{baseUrl}}/api/issues
+Content-Type: application/json
+Accept: application/json
+
+{
+  "title": "Hi",
+  "description": "A sufficiently long description.",
+  "priority": "Medium"
+}
+
+### Unknown issue (expect 404)
+PATCH {{baseUrl}}/api/issues/not-a-real-issue/status
+Content-Type: application/json
+Accept: application/json
+
+{
+  "status": "Resolved"
+}

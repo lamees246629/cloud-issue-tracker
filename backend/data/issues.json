@@ -1,0 +1,18 @@
+[
+  {
+    "id": "ISS-101",
+    "title": "Unable to access Wi-Fi",
+    "description": "Connection fails in the teaching lab.",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-10-13T07:02:04.422Z"
+  },
+  {
+    "id": "ISS-102",
+    "title": "Projector not detected",
+    "description": "Laptop cannot detect the classroom projector.",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2026-10-13T07:02:04.422Z"
+  }
+]
