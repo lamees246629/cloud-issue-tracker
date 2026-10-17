@@ -14,5 +14,13 @@
     "priority": "Medium",
     "status": "Open",
     "createdAt": "2026-10-13T07:02:04.422Z"
+  },
+  {
+    "id": "ISS-50b9c0f7-bf06-494c-9aee-b4a7c618c014",
+    "title": "lamees",
+    "description": "i hate this module",
+    "priority": "High",
+    "status": "Resolved",
+    "createdAt": "2026-10-17T09:38:11.671Z"
   }
 ]
